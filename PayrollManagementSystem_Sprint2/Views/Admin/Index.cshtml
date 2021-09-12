@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--#region Admin NavBar-->
+
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    @*<div class="wrapper">
+            <input type="checkbox" id="btn" hidden>
+            <label for="btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            <nav id="sidebar">
+                <div class="title">
+                    Side Menu
+                </div>
+                <ul class="list-items">
+                    <li><a asp-action="Employees">Employees</a></li>
+                    <li><a asp-action="LeaveDetails">Leaves</a></li>
+                    <li><a asp-action="EmployeeTimesheets">Timesheets</a></li>
+                    <li><a asp-action="PayrollReport">Payroll</a></li>
+                </ul>
+            </nav>
+        </div>*@
+    <!--<div class="content">-->
+    <!--#endregion-->
+    <!--<h3 align="center">ADMIN DASHBOARD</h3>
+        <h2 align="center">_____________________________________________________</h2>
+        <ul>
+            <li><a asp-action="Employees">Employee Details</a></li>
+            <li><a asp-action="LeaveDetails">Approve Leaves</a></li>
+            <li><a asp-action="EmployeeTimesheets">Approve Timesheets</a></li>
+            <li><a asp-action="PayrollReport">Generate Salary Reports</a></li>
+            <li><a asp-controller="Home" asp-action="Index">Back to Home</a></li>
+        </ul>
+    </div>-->
+
+    <section class="service_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>
+                    ADMIN DASHBOARD
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box b1">
+                        <div class="detail-box">
+                            <h5>
+                                Employee Details
+                            </h5>
+                            <a asp-action="Employees">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box b2">
+                        @*<div class="img-box">
+                                <img src="/brincht/images/timesheetrecords.png" alt="">
+                            </div>*@
+                        <div class="detail-box">
+                            <h5>
+                                Approve Leaves
+                            </h5>
+                            <a asp-action="LeaveDetails">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box b1">
+                        <div class="detail-box">
+                            <h5>
+                                Approve TimeSheets
+                            </h5>
+                            <a asp-action="EmployeeTimesheets">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box b2">
+                        <div class="detail-box">
+                            <h5>
+                                Generate Salary Reports
+                            </h5>
+                            <a asp-action="PayrollReport">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+

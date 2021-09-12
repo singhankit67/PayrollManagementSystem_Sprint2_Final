@@ -1,0 +1,43 @@
+﻿@model PayrollManagementSystem_Sprint2.Models.LeaveMaster
+
+@{
+    ViewData["Title"] = "ViewLeaveMasterEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ViewLeaveMasterEmployee</h1>
+
+<div>
+    <h4>LeaveMaster</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LeavesAvailable)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LeavesAvailable)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LeavesAvailed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LeavesAvailed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LeavesBalance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LeavesBalance)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.EmployeeId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EmployeeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
